@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="form1.css">
+		<title>
+			Пример формы 
+		</title>
+		<nav>
+		<ul class="nav">
+			<li> <a href="table1.html">1.Таблица1</a></li>
+			<li> <a href="index.html">1.Таблица2</a></li>
+			<li> <a href="form.html">1. Форма1</a></li>
+			<li> <a href="index.html">На главную</a></li>
+			<li> <a href="lab2.html">2. Таблицы в HTML</a></li>
+		</ul>
+	</nav>
+	</head><br>
+	<body><br>
+		<h1>Пример формы регистрации сайта</h1>
+		<form action="mailto:koshara511@mail.ru" method="post" enctype="text/plain" enctype="multipart/form-data">
+			<label for="login-field">Логин:<br>
+				<input type="text" name="login" id="login-field">
+			</label><br>
+			<label for="password-field">Пароль:<br>
+				<input type="password" name="password" id="password-field">
+			</label><br>
+			<label for="URL-field">URL-адрес сайта:<br>
+				<input type="text" name="URL" id="URL-field" >
+			</label><br>
+			<label for="nazvanie-field">Название сайта:<br>
+				<input type="text" name="nazvanie" id="nazvanie-field">
+			</label><br>
+			Описание сайта:<br>
+			<label for="DopInf-field">
+				<textarea name="DopInf" id="DopInf-field" rows="10" cols="50">
+				</textarea>
+			</label><br>
+			Тема сайта:<br>
+			<select name="inf">
+				<option value="Тема не выбрана">Тема не выбрана</option>
+				<option value="Животные">Животные</option>
+				<option value="Машины">Машины</option>
+			</select><br>
+			<input type="file" name="izobr" value="Обзор..."><br>
+			Баннер 88х31:<br>
+			<input type="reset" value="Очистить">
+			<input type="submit" name="yeah" value="Отправить">
+		</form>
+	</body>
+</html>
